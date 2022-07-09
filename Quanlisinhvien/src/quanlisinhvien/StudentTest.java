@@ -102,6 +102,7 @@ public class StudentTest {
                            
                     break;        
             case 6: 
+                //Ghi de lop so sanh cua lop collections
                 Collections.sort(studentList, new Comparator<Student>() {
                 @Override
                 public int compare(Student o1, Student o2) {
@@ -109,7 +110,7 @@ public class StudentTest {
                         {
                             return -1;
                         }
-                         return 1;        
+                        return 1;        
                     }
                 });
                 //Buoc 2: Hien thi
