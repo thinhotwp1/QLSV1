@@ -64,14 +64,11 @@ public class Person {
         System.out.println("Nhap gioi tinh:");
         gender = sc.nextLine();
         System.out.println("Nhap ngay sinh:");
-        birthday = sc.nextInt();
+        birthday =Integer.parseInt(sc.nextLine());
         System.out.println("Nhap dia chi:");
         address = sc.nextLine();
     }
     public void showInfo(){
-        System.out.println("Ten la:"+name);
-        System.out.println("Gioi tinh la:"+gender);
-        System.out.println("Ngay sinh la:"+birthday);
-        System.out.println("Dia chi la:"+address);
+        System.out.print("Ten:"+name+"\t"+"Gioi tinh:"+gender+"\t"+"Ngay sinh:"+"\t"+birthday+"\t"+"Dia chi:"+address);
     }
 }

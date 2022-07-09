@@ -69,7 +69,7 @@ public class Student extends Person{
         System.out.println("Nhap diem:");
         while(true){
             mark = Float.parseFloat(sc.nextLine());
-            if(mark > 0 && mark < 10){
+            if(mark >= 0 && mark <= 10){
                 break;
             }
             else{
@@ -91,9 +91,8 @@ public class Student extends Person{
     @Override
     public void showInfo() {
         super.showInfo(); 
-        System.out.println("Ma sinh vien: "+rollNo);
-        System.out.println("Diem sinh vien: "+mark);
-        System.out.println("Email sinh vien: "+email);
+        System.out.print("\t"+"Ma sinh vien: "+rollNo+"\t"+"Diem sinh vien: "+mark+"\t"+"Email sinh vien: "+email);
+        System.out.println("");
     }
     
     public boolean checkMark(){
