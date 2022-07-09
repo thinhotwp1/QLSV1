@@ -5,6 +5,7 @@
  */
 package quanlisinhvien;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -17,6 +18,7 @@ public class StudentTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        ArrayList<Student> studentList = new ArrayList<>();
         
         while(true){
         System.out.println("----------So good homie----------");
@@ -49,7 +51,9 @@ public class StudentTest {
                     break;
             case 7:
                     System.out.println("Bye bye !!");
-                    break;                    
+                    break;  
+            default:
+                    System.err.println("Nhap sai roi nhap lai di !!!");
         }
         
         }
