@@ -57,6 +57,7 @@ public class Person {
     }
     
     Scanner sc = new Scanner(System.in);
+    
     public void inputInfo(){
         System.out.println("Nhap ten:");
         name = sc.nextLine();
