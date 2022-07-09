@@ -69,9 +69,6 @@ public class Person {
         address = sc.nextLine();
     }
     public void showInfo(){
-        System.out.println("Ten la:"+name);
-        System.out.println("Gioi tinh la:"+gender);
-        System.out.println("Ngay sinh la:"+birthday);
-        System.out.println("Dia chi la:"+address);
+        System.out.print("Ten:"+name+"\t"+"Gioi tinh:"+gender+"\t"+"Ngay sinh:"+"\t"+birthday+"\t"+"Dia chi:"+address);
     }
 }
