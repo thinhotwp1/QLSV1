@@ -5,6 +5,8 @@
  */
 package quanlisinhvien;
 
+import java.util.Scanner;
+
 /**
  *
  * @author onthi
@@ -15,7 +17,8 @@ public class StudentTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        while(true){
         System.out.println("----------So good homie----------");
         System.out.println("1.Nhap vao n sinh vien (n la so luong sinh vien)");
         System.out.println("2.Hien thi thong tin tat ca sinh vien");
@@ -26,9 +29,30 @@ public class StudentTest {
         System.out.println("7.Thoat chuong trinh");
         System.out.println("------------Thanks homie------------");
         
+        Scanner sc = new Scanner(System.in);
         
+        int n;
+        int chon = Integer.parseInt(sc.nextLine()); 
+        switch(chon){
+            case 1: System.out.println("Nhap vao n:");
+                    n=Integer.parseInt(sc.nextLine());
+                    break;
+            case 2: 
+                    break;
+            case 3: 
+                    break;
+            case 4: 
+                    break;        
+            case 5: 
+                    break;        
+            case 6: 
+                    break;
+            case 7:
+                    System.out.println("Bye bye !!");
+                    break;                    
+        }
         
-        
+        }
     }
     
 }
