@@ -11,7 +11,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 
-public class StudentTest {
+public class Quanlysinhvien {
 
 
     public static void main(String[] args) {
