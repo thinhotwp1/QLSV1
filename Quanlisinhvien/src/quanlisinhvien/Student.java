@@ -95,4 +95,12 @@ public class Student extends Person{
         System.out.println("Diem sinh vien: "+mark);
         System.out.println("Email sinh vien: "+email);
     }
+    
+    public boolean checkMark(){
+        if(mark>=8){
+            return true;
+        }
+        else
+            return false;
+    }
 }
