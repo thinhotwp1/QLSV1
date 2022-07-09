@@ -19,6 +19,9 @@ public class StudentTest {
      */
     public static void main(String[] args) {
         ArrayList<Student> studentList = new ArrayList<>();
+        Student std1 = new Student("B19DCCN0",5,"Hs1@gmail.com","HS1","nam",19,"Ha Noi");
+        studentList.add(std1);
+       
         
         while(true){
         System.out.println("----------So good homie----------");
@@ -36,10 +39,17 @@ public class StudentTest {
         int n;
         int chon = Integer.parseInt(sc.nextLine()); 
         switch(chon){
-            case 1: System.out.println("Nhap vao n:");
-                    n=Integer.parseInt(sc.nextLine());
-                    break;
-            case 2: 
+            case 1: System.out.println("Nhap vao so luong sinh vien:");
+                        n=Integer.parseInt(sc.nextLine());
+                        for(int i=0;i<n;i++){
+                            Student std = new Student();
+                            std.inputInfo();
+                            studentList.add(std);
+                        }   
+                         break;
+            case 2: for(int i=0;i<studentList.size();i++){
+                        studentList.get(i).showInfo();
+                     }
                     break;
             case 3: 
                     break;

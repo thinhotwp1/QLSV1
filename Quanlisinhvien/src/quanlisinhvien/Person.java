@@ -64,7 +64,7 @@ public class Person {
         System.out.println("Nhap gioi tinh:");
         gender = sc.nextLine();
         System.out.println("Nhap ngay sinh:");
-        birthday = sc.nextInt();
+        birthday =Integer.parseInt(sc.nextLine());
         System.out.println("Nhap dia chi:");
         address = sc.nextLine();
     }
